@@ -45,8 +45,10 @@ A simple, modern personal task management app built with React. Track your tasks
 [Add your deployed app link here]
 
 ## 🖼 Screenshots
-![Light mode screenshot](./screenshots/light-mode.png)
-![Dark mode screenshot](./screenshots/dark-mode.png)
+![Screenshot 2025-07-03 160050](https://github.com/user-attachments/assets/d76a18d1-87e8-405c-bf67-fc9c5762366e)
+
+![Screenshot 2025-07-03 160056](https://github.com/user-attachments/assets/a61baa72-4ed6-43e4-ba8a-87f635efafec)
+
 
 ## 📦 Deployment
 - Deploy easily to GitHub Pages, Netlify, or Vercel.
