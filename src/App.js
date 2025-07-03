@@ -17,7 +17,34 @@ const Dashboard = ({ onLogout }) => {
   const [showDeleteModal, setShowDeleteModal] = useState(false);
 
   useEffect(() => {
-    setTasksState(getTasks());
+    if (getTasks().length === 0) {
+      const sampleTasks = [
+        {
+          id: 1,
+          title: "Complete React assignment",
+          description: "Build a task tracker application",
+          completed: false,
+          createdAt: "2024-01-15T10:00:00Z",
+          priority: "High",
+          dueDate: "2024-01-20",
+          categories: ["React", "Assignment"]
+        },
+        {
+          id: 2,
+          title: "Review JavaScript concepts",
+          description: "Go through ES6+ features",
+          completed: true,
+          createdAt: "2024-01-14T15:30:00Z",
+          priority: "Medium",
+          dueDate: "2024-01-18",
+          categories: ["JavaScript", "Review"]
+        }
+      ];
+      setTasks(sampleTasks);
+      setTasksState(sampleTasks);
+    } else {
+      setTasksState(getTasks());
+    }
   }, []);
 
   useEffect(() => {
